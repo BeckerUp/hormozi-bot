@@ -115,7 +115,7 @@ def add_to_history(user_id: int, role: str, content: str) -> None:
         conversation_history[user_id] = conversation_history[user_id][-MAX_HISTORY:]
 
 
-def clear_history(user_id int) -> None:
+def clear_history(user_id: int) -> None:
     conversation_history[user_id] = []
 
 
